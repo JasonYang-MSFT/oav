@@ -57,7 +57,7 @@ mkdirSync(cmdOutputPath + "/swagger");
 
 outputExamples = outputFolderName + "/examples/"
 relativeExamplesPath = "../examples/"
-specName = swaggerSpecPath.split("/")
+specName = swaggerSpecPath.split("\\")
 outputSwagger = outputFolderName + "/swagger/" + specName[specName.length - 1].split(".")[0] + ".json"
 
 var swaggerObject = require(swaggerSpecPath)
